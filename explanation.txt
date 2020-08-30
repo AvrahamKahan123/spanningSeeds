@@ -4,7 +4,8 @@ A. This project computes the number of generated output streams for Fibonacci fe
 Q. Are there any practical uses?
 A. Maybe! Shift registers are important in cryptography and random number generation. We (Avraham Kahan and Mikey Schwartz) have seen all sorts of wierd things
 while looking at the sequence, including Walsh Matrices (seen if you manipulate the series of answers generated for a range of taps a certain way), roots for 
-irreducible polynomials (the number sequences mirrors closely roots for x^(tap) + x(tap-1)... 1), etc. Its still an open work in progress. See results.txt for full mathematical research
+irreducible polynomials (the number sequences mirrors closely roots for x^(tap) + x(tap-1)... 1), etc. Its still an open work in progress. See results.txt for 
+full mathematical research
 
 Q. Whats with the lookup table? How was this code optimized?
 A. In our older versions (olderVersion, and Python version) the program manually converted the numbers to their binary representations as a Linked List.
