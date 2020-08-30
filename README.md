@@ -5,7 +5,7 @@ ENTRY POINT FOR PROGRAM FOR NEWEST VERSION IS CLI.cpp
 # usage 
 type registerSequences --help to see all command line options
 # explanation 
-For explanation of mathematical research results, read results.txt
+For explanation of mathematical research, read RESULTS.txt
 For explanation of programming decisions, read explanation.txt
 
 # Background on random numbers 
