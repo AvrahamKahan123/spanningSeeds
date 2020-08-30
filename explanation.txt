@@ -1,3 +1,4 @@
+PLEASE SEE RESULTS.txt FOR FULL MATHEMATICAL RESEARCH
 Q. What is this project?
 A. This project computes the number of generated output streams for Fibonacci feedback shift registers. Registers of this type work like this: a set of taps is selected
 
