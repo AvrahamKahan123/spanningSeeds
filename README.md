@@ -4,6 +4,8 @@ Can be thought of as a Pseudorandom number generator algorithm - Determine the n
 ENTRY POINT FOR PROGRAM FOR NEWEST VERSION IS CLI.cpp 
 # usage 
 type registerSequences --help to see all command line options
+If you want to run for bases other than 2, you must use the oldVersion or pythonVersion. oldVersion is signifigantly faster than pythonVersion.
+These Versions do not have CLIs like newestVersion.
 # explanation 
 For explanation of mathematical research, read RESULTS.txt
 For explanation of programming decisions, read explanation.txt
