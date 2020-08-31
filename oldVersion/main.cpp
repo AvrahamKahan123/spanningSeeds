@@ -105,7 +105,7 @@ int findNumSeeds(int num, int base) {
 		while(pastStates[currentState] == 0) {
 			changedStates +=1;
 			pastStates[currentState] = 1;
-			updateB2(currentStateB2, dotProduct(taps, currentStateB2)%2, tapsLength);
+			updateB2(currentStateB2, dotProduct(taps, currentStateB2)%base, tapsLength);
 			currentState = toBase10(currentStateB2);
 		}
 	}
