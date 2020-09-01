@@ -1,5 +1,5 @@
 PLEASE SEE RESEARCHPAPER.txt FOR FULL MATHEMATICAL RESEARCH. 
-The questions here pertain mostly to the newestVersion. 
+The questions here pertain mostly to the newVersion. 
 Q. What is this project?
 A. This project computes the number of generated output streams for Fibonacci feedback shift registers. Registers of this type work like this: a set of taps is selected
 
@@ -9,7 +9,7 @@ while looking at the sequence, including Walsh Matrices (seen if you manipulate 
 irreducible polynomials (the number sequences mirrors closely roots for x^(tap) + x(tap-1)... 1), etc. Its still an open work in progress. See results.txt for 
 full mathematical research
 
-Q. Whats with the lookup table in newestVersion? How was this code optimized?
+Q. Whats with the lookup table in newVersion? How was this code optimized?
 A. In our older versions (olderVersion, and Python version) the program manually converted the numbers to their binary representations as a Linked List.
 However, I realized we could precompute the dot-product of the taps and seed mod 2 as just counting the number of 1s and 0s in the number generated from using 
 the bitwise AND operator on the taps and seeds. The lookup table precomputes this. That led to a 13X (!) speedup in the run time. It also employs multithreading.
