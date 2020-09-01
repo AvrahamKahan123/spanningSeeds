@@ -1,4 +1,5 @@
-PLEASE SEE RESULTS.txt FOR FULL MATHEMATICAL RESEARCH
+PLEASE SEE RESEARCHPAPER.txt FOR FULL MATHEMATICAL RESEARCH. 
+The questions here pertain mostly to the newestVersion. 
 Q. What is this project?
 A. This project computes the number of generated output streams for Fibonacci feedback shift registers. Registers of this type work like this: a set of taps is selected
 
@@ -8,7 +9,7 @@ while looking at the sequence, including Walsh Matrices (seen if you manipulate 
 irreducible polynomials (the number sequences mirrors closely roots for x^(tap) + x(tap-1)... 1), etc. Its still an open work in progress. See results.txt for 
 full mathematical research
 
-Q. Whats with the lookup table? How was this code optimized?
+Q. Whats with the lookup table in newestVersion? How was this code optimized?
 A. In our older versions (olderVersion, and Python version) the program manually converted the numbers to their binary representations as a Linked List.
 However, I realized we could precompute the dot-product of the taps and seed mod 2 as just counting the number of 1s and 0s in the number generated from using 
 the bitwise AND operator on the taps and seeds. The lookup table precomputes this. That led to a 13X (!) speedup in the run time. It also employs multithreading.
@@ -17,7 +18,6 @@ Speeding up the sequence generation for other bases would seem to be signifigant
 Q. What does the name mean? "Spanning seeds"?
 A. At the beginning we were not sure what exactly this sequence was. One thing this reminded me of was spaces in linear algebra (with the seeds/restarts as the bases of the space), so I named it after that idea. As it turns out, they probably aren't related
 
-Q. Why does the code use mostly features found in C (ex. Arrays instead of vectors)? Why not use C in place of C++ then? 
-A. Personally, I find C style to be more readable and less convoluted, and also probably leads to slightly better performance. C++ was only used because its easier to multithread in it. Thats why the program has C style in C++ code
-
+Q. Why does the code go out of it's way to use simple data structures (ex. Arrays instead of vectors)? Why not use C in place of C++ then? 
+A. The program was meant to be as perfomant as possible. Even though Vectors are probably almost as fast as arrays (especially given compiler improvements), there was no need to risk a performance hit. C++ was chosen because of its support for multithreading
 
