@@ -17,7 +17,3 @@ Speeding up the sequence generation for other bases would seem to be signifigant
 
 Q. What does the name mean? "Spanning seeds"?
 A. At the beginning we were not sure what exactly this sequence was. One thing this reminded me of was spaces in linear algebra (with the seeds/restarts as the bases of the space), so I named it after that idea. As it turns out, they probably aren't related
-
-Q. Why does the code go out of it's way to use simple data structures (ex. Arrays instead of vectors)? Why not use C in place of C++ then? 
-A. The program was meant to be as perfomant as possible. Even though Vectors are probably almost as fast as arrays (especially given compiler improvements), there was no need to risk a performance hit. C++ was chosen because of its support for multithreading
-
