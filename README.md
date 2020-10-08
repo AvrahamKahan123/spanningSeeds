@@ -9,7 +9,8 @@ These Versions do not have CLIs like newVersion.
 # explanation 
 For explanation of mathematical research, read RESEARCHPAPER.txt
 For explanation of programming decisions, read explanation.txt
-
+# new development
+Adding Galois LSFR which is supposedly faster
 # Background on random numbers 
 Fibonacci Linear feedback shift registers work in the following way for base 2 (works the same for all other bases)
 The taps are chosen (any positive integer).
