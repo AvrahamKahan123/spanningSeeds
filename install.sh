@@ -1,5 +1,6 @@
 #!/bin/bash
-# run this script as superuser to install the tool. Will install as registerSequences and download source code. Can also be used as an installation guide
+# run this script as superuser to install the tool. There is a makefile available as well
+#Will install as registerSequences and download source code. Can also be used as an installation guide
 cd ~/Downloads
 git clone https://github.com/AvrahamKahan123/spanningSeeds/
 cd spanningSeeds/newVersion
