@@ -11,7 +11,7 @@ For explanation of mathematical research, read RESEARCHPAPER.txt
 For explanation of programming decisions, read explanation.txt
 # new development
 Adding Galois LSFR which is supposedly faster
-# Background on random numbers 
+# Background on LSFRs
 Fibonacci Linear feedback shift registers work in the following way for base 2 (works the same for all other bases)
 The taps are chosen (any positive integer).
 Another positive integer (a seed) is chosen as the first random number with the same number of bits in its binary representation as the tap.
