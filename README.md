@@ -21,4 +21,4 @@ using the last generated random number.
 Ex. set taps to 5, and seed to 3. So taps = [1 0 1] in binary and seed = [1 1 0]. So next number is 7 ([1 1 1]), and then 6 ([0 1 1]).
 
 # installation 
-Follow installation.sh or run it.
+There is a makefile in newVersion. You can also follow installation.sh or run it instead
